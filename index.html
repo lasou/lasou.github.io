@@ -8,58 +8,144 @@
 
 <body>
 
-<h1> La vie d'un chat	<h1/> 
-<h2> Alors <h2/>
-<h3> Alors <h3/>
-<h4> Alors <h4/>
-<h5> Alors  <h5/>
-<h6> Alors <h6/>
+<h1> HTML pour les debutant	</h1> 
 
 
+<h2> Les types de balise </h2>	 
 
 
-
-
-	<p>
-	Ce <em> doccument</em> présente la vie des <mark> chats domestique </mark> et la vie des chats sauvages ainsi que la vie des chats domestiques retournés à la vie sauvage.
-	</p>	
-
-	<p>
-	  Ce <em>doccument</em> présente la vie des  chats domestique et la vie des chats sauvages ainsi que la vie des chats domestiques retournés à la vie sauvage.
-	</p>
-
-
-	<ol>
-	<li> article 1 d'une liste ordonnée.</li> 
-	<li> article 2 d'une liste  ordonnée.</li> 
-	</ol>
-
-	<ul>
-	<li> article 1 d'une liste non ordonnée. </li> 
-	<li> article 2 d'une liste non ordonnée.</li> 
+	<ul>  
+	
+	<li>  &lt; balise &gt; ; balise ouvrante. </li> 
+	<li>  &lt; /balise &gt; ; balise fermante correspondante.</li> 
+	<li>  &lt; balise /&gt; ; balise auto-fermante. </li> 
+	
+	
 	</ul>
+<h2> Structure minimale d'un code HTML </h2>
 
+	La balise qui spécifie la version.
 	
 	
 	<dl>
-	<dt> terme 1.</dt> 	<dd> la definition du terme 1.</dd> 
-	<dt> terme2 .</dt> 	<dd> la definition du terme 2.</dd> 
-	<dt> terme 3.</dt> 	<dd> la definition du terme 3.</dd> 
+	<dt> La balise qui spécifie la version :  </dt> 	<dd> &lt;!doctype html&gt; </dd> 
+	
+	<dt> La balise head :</dt> 	<dd> &lt;head&gt; ... &lt;/head&gt;. </dd>
+	
+	<dt> Le titre :</dt> 	<dd>  elle est comprise dans la balise head. &lt; title&gt; ... &lt; /title &gt;.</dd> 
+	<dt> Le body :</dt> 	<dd>  Le contenu de la page wed. &lt; body&gt; ... &lt; /body &gt;.</dd> 
 	</dl>
 	
-	<pre>
-	Miaou Miaou. en première ligne.
 	
-	Miaou de la deuxième ligne.
+
+	<h2> Les titres et les sous titres : </h2>	
+		<p>
+		Il y a 6 niveaux de titres en html. 
+	   </p>
+	   
+		<ul>
+		<li>  &lt; h1 &gt;  titre &lt;/ h1 &gt; </li> 
+		<li>  &lt; h2 &gt;  sous-titre 2  &lt;/ h2 &gt;   </li> 
+		<li>  &lt; h3 &gt;  sous-titre 3  &lt;/ h3 &gt;   </li> 
+		<li>  &lt; h4 &gt;  sous-titre 4  &lt;/ h4 &gt;   </li> 
+		<li>  &lt; h5 &gt;  sous-titre 5  &lt;/ h5 &gt;   </li> 
+		<li>  &lt; h6 &gt;  sous-titre 6  &lt;/ h6 &gt;   </li> 
+		</ul>
+	
+	
+	
+	<h2> Les paragraphes : </h2>	
+		<pre>
+Un paragraphe est deux balises comme suit; 
+		
+		&lt; p &gt;  
+		   ...	
+		&lt;/ p &gt; 
+</pre>
+	
+	 
+	
+	
+	
+	<h2> Les balises du texte formaté : </h2>	
+	<pre>Un paragraphe est deux balises comme suit; 
+		&lt; pre &gt;  
+		 ...	
+		&lt;/ pre &gt; 
+		 </pre>
+	
+	
+	
+	<h2> Les listes en HTML : </h2>	
+		 
+	<p> 
+	 Il y a 3 types de listes en html : 
+	</p>
+	
+	 	<h3> Les listes ordonnées : </h3>	
+		
+	<pre> 
+	&lt; ol &gt;
+	&lt; li &gt;  article 1 d'une liste ordonnée.&lt;/ li &gt; 
+	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; 
+	&lt;/ ol &gt; 
 	</pre>
-	
-	<pre>
-	<code>
-	Miaou Miaou. en première ligne.
-	
-	Miaou de la deuxième ligne.
-	</code>
+		
+		<h3> Les listes non ordonnées : </h3>	
+	<pre> 
+	&lt; ul &gt;
+	&lt; li &gt;  article 1 d'une liste ordonnée.&lt;/ li &gt; 
+	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; 
+	&lt;/ ul &gt; 
 	</pre>
+		
+		
+		<h3> Les listes de définition : </h3>	
+		
+	<pre> 
+	&lt; dl &gt;
+	&lt; dt &gt;  terme 1.&lt;/ dt &gt;  
+		&lt; dd &gt;  la definition du terme 1.&lt;/ dd &gt; 
+	&lt; dt &gt;  terme2 .&lt;/ dt &gt;  
+		&lt; dd &gt;  la definition du terme 2.&lt;/ dd &gt; 
+	&lt;/ dl &gt; 
+	</pre>	
+		
+		
+			
+		
+		
+		
+    <h2> L'echappement en HTML  </h2>	
+		
+	<p> 
+	 &lt; , &gt; et &amp; ne peuvent pas être écrits directement dans un texte.
+	</p>
+		
+	<pre> 
+	&lt; = &amp;lt;
+
+	&gt; = &amp;gt;
+	
+	&amp; = &amp;amp;
+	 
+	</pre>
+		
+		
+		
+		
+	
+	<h2> Les validateurs du code HTML  </h2>	
+		<ul>
+		<li>  validator.w3.org. </li> 
+		<li>  validator.whatwg.org.</li> 
+		</ul>
+	
+	
+	
+
+
+	
 	
 </body>
 
