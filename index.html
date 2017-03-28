@@ -10,8 +10,7 @@
 
 
 <header>
-  <h1>HTML pour les debutants</h1>
-  <img src="mdn-logo-sm.png" alt="MDN logo">
+<h1>HTML pour les debutants</h1>
 </header>
 
 
@@ -23,11 +22,22 @@
  
  
  <nav>
-    <ul>
-    <li><a href="#lien">  Les lien en html.  </a>   </li>
-    <li><a href="#types">Les types de balise.</a></li>
-	<li><a href="#Structure">Structure minimale d'un code HTML.</a></li>
-    </ul>
+<ul>
+<li><a href="#lien">  Les lien en html.</a></li>
+<li><a href="#types">Les types de balise.</a></li>
+<li><a href="#Structure">Structure minimale d'un code HTML.</a></li>
+<li><a href="#titres"> Les titres en HTML.</a></li>
+<li><a href="#paragraphe"> Les paragraphes.</a></li>
+<li><a href="#tform"> Le texte formaté.</a></li>
+<li><a href="#liste"> Les différents types de liste.</a></li>
+
+<ul>
+<li><a href="#ordonnee"> Les listes ordonnées.</a></li>
+<li><a href="#nonord"> Les listes non ordonnées.</a></li>
+<li><a href="#define"> Les listes de définition.</a></li>
+</ul>
+
+</ul>
 </nav>
  
  
@@ -41,12 +51,8 @@
  
  
  <section id="lien" >
- 
-   <h2>Les liens </h2>
- 
-	
+<h2>Les liens </h2>
 <a href="new.html">Cliquer ici pour ouvrir le nouveau fichier</a>
-
  </section  >
 
 
@@ -55,59 +61,43 @@
 
 
 <section id="types" >
-
 <h2> Les types de balise </h2>	 
+<ul>  
+<li>  &lt; balise &gt; ; balise ouvrante. </li> 
+<li>  &lt; /balise &gt; ; balise fermante correspondante.</li> 
+<li>  &lt; balise /&gt; ; balise auto-fermante. </li> 
+</ul>
+ </section  >
 
-
-	<ul>  
-	
-	<li>  &lt; balise &gt; ; balise ouvrante. </li> 
-	<li>  &lt; /balise &gt; ; balise fermante correspondante.</li> 
-	<li>  &lt; balise /&gt; ; balise auto-fermante. </li> 
-	<li>   </li> 
-	<li>    </li> 
-	<li>    </li> 
-	<li>    </li> <li>    </li> <li>    </li> <li>    </li> 
-	<li>    </li> <li>    </li> <li>    </li> 
-	  <li>    </li> 
-	  <li>    </li> 
-	  <li>    </li> 
-	  <li>    </li> <li>    </li> <li>    </li> 
-	  <li>    </li> 
-	  <li>    </li> 
-	</ul>
-		 </section  >
-	 
-	 <section id="Structure" >
+ 
+<section id="Structure" >
 <h2> Structure minimale d'un code HTML </h2>
-
+<dl>
+<dt> La balise qui spécifie la version :  </dt> 	<dd> Pour la <mark> version 5 </mark> : &lt;!doctype html&gt; </dd> 
+<dt> La balise head :</dt> 	<dd> &lt;head&gt; ... &lt;/head&gt;. </dd>
+<dt> Le titre :</dt> 	<dd>  elle est comprise dans la balise head. &lt; title&gt; ... &lt; /title &gt;.</dd> 
+<dt> Le body :</dt> 	<dd>  Le contenu de la page web. &lt; body&gt; ... &lt; /body &gt;.</dd> 
+</dl>
+</section>
 	
-	<dl>
-	<dt> La balise qui spécifie la version :  </dt> 	<dd> Pour la <mark> version 5 </mark> : &lt;!doctype html&gt; </dd> 
-	<dt> La balise head :</dt> 	<dd> &lt;head&gt; ... &lt;/head&gt;. </dd>
-	<dt> Le titre :</dt> 	<dd>  elle est comprise dans la balise head. &lt; title&gt; ... &lt; /title &gt;.</dd> 
-	<dt> Le body :</dt> 	<dd>  Le contenu de la page web. &lt; body&gt; ... &lt; /body &gt;.</dd> 
-	</dl>
-	 </section  >
-	
-
-	<h2> Les titres et les sous titres : </h2>	
-		<p>
-		Il y a 6 niveaux de titres en html. 
-	   </p>
-	   
-		<ul>
-		<li>  &lt; h1 &gt;  titre &lt;/ h1 &gt; </li> 
-		<li>  &lt; h2 &gt;  sous-titre 2  &lt;/ h2 &gt;   </li> 
-		<li>  &lt; h3 &gt;  sous-titre 3  &lt;/ h3 &gt;   </li> 
-		<li>  &lt; h4 &gt;  sous-titre 4  &lt;/ h4 &gt;   </li> 
-		<li>  &lt; h5 &gt;  sous-titre 5  &lt;/ h5 &gt;   </li> 
-		<li>  &lt; h6 &gt;  sous-titre 6  &lt;/ h6 &gt;   </li> 
-		</ul>
+<section id="titres" >
+<h2> Les titres et les sous titres : </h2>	
+<p>
+Il y a 6 niveaux de titres en html. 
+</p>
+<ul>
+<li>  &lt; h1 &gt;  titre &lt;/ h1 &gt; </li> 
+<li>  &lt; h2 &gt;  sous-titre 2  &lt;/ h2 &gt;   </li> 
+<li>  &lt; h3 &gt;  sous-titre 3  &lt;/ h3 &gt;   </li> 
+<li>  &lt; h4 &gt;  sous-titre 4  &lt;/ h4 &gt;   </li> 
+<li>  &lt; h5 &gt;  sous-titre 5  &lt;/ h5 &gt;   </li> 
+<li>  &lt; h6 &gt;  sous-titre 6  &lt;/ h6 &gt;   </li> 
+</ul>
+</section>
 	
 	
-	
-	<h2> Les paragraphes : </h2>	
+<section id="paragraphe" >	
+<h2> Les paragraphes : </h2>	
 		<pre>
 Un paragraphe est deux balises comme suit; 
 		
@@ -115,11 +105,11 @@ Un paragraphe est deux balises comme suit;
 		   ...	
 		&lt;/ p &gt; 
 </pre>
-	
+</section >	
 	 
 	
 	
-	
+	<section id="tform" >	
 	<h2> Les balises du texte formaté : </h2>	
 	<pre>Un paragraphe est compris entre deux balises comme suit; 
 	
@@ -127,24 +117,28 @@ Un paragraphe est deux balises comme suit;
 					...	
 				&lt;/ pre &gt; 
 	 </pre>
+	</section >	
 	
 	
 	
+	
+	<section id="liste">
 	<h2> Les listes en HTML : </h2>	
 		 
 	<p> 
 	 Il y a 3 types de listes en html : 
 	</p>
 	
+	<article id="ordonnee">
 	 	<h3> Les listes ordonnées : </h3>	
-		
-	<pre> 
+			<pre> 
 	&lt; ol &gt;
 	&lt; li &gt;  article 1 d'une liste ordonnée.&lt;/ li &gt; 
 	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; 
 	&lt;/ ol &gt; 
 	</pre>
 		
+		<article id="nonord">
 		<h3> Les listes non ordonnées : </h3>	
 	<pre> 
 	&lt; ul &gt;
@@ -152,11 +146,10 @@ Un paragraphe est deux balises comme suit;
 	&lt; li &gt;  article 2 d'une liste non ordonnée.&lt;/ li &gt; 
 	&lt;/ ul &gt; 
 	</pre>
-		
-		
+		</article >
+		<article id="define">
 		<h3> Les listes de définition : </h3>	
-		
-	<pre> 
+			<pre> 
 	&lt; dl &gt;
 	&lt; dt &gt;  terme 1.&lt;/ dt &gt;  
 		&lt; dd &gt;  la definition du terme 1.&lt;/ dd &gt; 
@@ -164,8 +157,8 @@ Un paragraphe est deux balises comme suit;
 		&lt; dd &gt;  la definition du terme 2.&lt;/ dd &gt; 
 	&lt;/ dl &gt; 
 	</pre>	
-		
-		
+		</article>
+		</section>
 			
 		
 		
