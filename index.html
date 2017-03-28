@@ -1,8 +1,9 @@
 <!doctype html>
-
-
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8">
+
+
+
 <title> ma premiere page </title>
 </head>
 
@@ -30,13 +31,6 @@
 <li><a href="#paragraphe"> Les paragraphes.</a></li>
 <li><a href="#tform"> Le texte formaté.</a></li>
 <li><a href="#liste"> Les différents types de liste.</a></li>
-
-	<ul>
-	<li><a href="#ordonnee"> Les listes ordonnées.</a></li>
-	<li><a href="#nonord"> Les listes non ordonnées.</a></li>
-	<li><a href="#define"> Les listes de définition.</a></li>
-	</ul>
-
 <li><a href="#echappe"> Les échappements en HTML.</a></li>
 <li><a href="#souligne"> Souligner ou mettre en gras du texte.</a></li>
 <li><a href="#validateur"> Les validateur du code HTML.</a></li>
@@ -131,7 +125,7 @@ Un paragraphe est deux balises comme suit;
 	 Il y a 3 types de listes en html : 
 	</p>
 	
-	<article id="ordonnee">
+	<article >
 	 	<h3> Les listes ordonnées : </h3>	
 			<pre> 
 	&lt; ol &gt;
@@ -139,8 +133,8 @@ Un paragraphe est deux balises comme suit;
 	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; 
 	&lt;/ ol &gt; 
 	</pre>
-		
-		<article id="nonord">
+	</article >	
+		<article >
 		<h3> Les listes non ordonnées : </h3>	
 	<pre> 
 	&lt; ul &gt;
@@ -149,7 +143,7 @@ Un paragraphe est deux balises comme suit;
 	&lt;/ ul &gt; 
 	</pre>
 		</article >
-		<article id="define">
+		<article >
 		<h3> Les listes de définition : </h3>	
 			<pre> 
 	&lt; dl &gt;
@@ -212,8 +206,8 @@ Un paragraphe est deux balises comme suit;
 <section id="lien" >
 <h2>Les liens </h2>
 <p> 
-Pour insérer un lien dans sa page on utilise la balise  <mark>  &lt; a &gt;  </mark> et on 
-spécifie l'argument <mark>  href  </mark>.
+Pour insérer un lien dans sa page, on utilise la balise  <mark>&lt; a &gt;</mark> et on 
+spécifie l'attribut <mark>  href  </mark>.
 
 </p> 
 <p> 
@@ -225,6 +219,20 @@ Où new.html correspond à l'URL du dossier local. On obtient le lien comme l'ex
 
 </p>
 
+Pour ouvrir le lien dans un novel onglet, on spécifie l'attribut <mark>target = "_blank"</mark>.
+<p> 
+ Sinon, pour l'ouvrir dans le même onglet, on spécifie l'attribut <mark>target = "_self"</mark>. 
+</p> 
+<p>
+Les autres valeurs de l'attribut target sont :
+</p>
+
+<ul>
+<li> blank</li> 
+<li> parent</li> 
+<li> self </li> 
+<li> top </li> 
+</ul>
 
 </section >
 
@@ -235,7 +243,7 @@ Où new.html correspond à l'URL du dossier local. On obtient le lien comme l'ex
 
 
 <p>
-Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&gt; avec deux arguments : src et alt <br />    
+Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&gt; avec deux attributs : src et alt <br />    
     &lt; img src = "le URL avec l'extention" alt="une description de l'image" />.<br /> 
 
 Pour exemple,<br />  <mark> 
@@ -267,10 +275,12 @@ Pour exemple,<br />  <mark>
 <table>
 <caption> Table d'état civiles  </caption>
 <thead>
+<tr>
 <th> Nom </th> 
 <th> Prénom(s)  </th>
 <th>  Date de naissance  </th>
 <th>  Lieu de naissance  </th>
+</tr>
 </thead>
 
 <tr>
@@ -294,11 +304,12 @@ Pour exemple,<br />  <mark>
 </tr>
 
 <tfoot>
+<tr>
 <th> Surname </th> 
 <th> Name </th>
 <th>Date de naissance</th>
 <th>Lieu de naissance</th>
- 
+ </tr>
 </tfoot>
 
 </table>
