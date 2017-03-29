@@ -1,8 +1,7 @@
 <!doctype html>
 <head>
 <meta charset="utf-8">
-
-
+<link rel= "stylesheet" type=" text/css" href="style.css"/>
 
 <title> ma premiere page </title>
 </head>
@@ -11,19 +10,15 @@
 
 
 <header>
-<h1>HTML pour les debutants</h1>
+<h1>
+HTML pour les debutants
+</h1> 
 </header>
 
-
  
- 
- 
- 
- 
- 
- 
- 
- <nav>
+<div class = "sommaire">
+<p id="titresommaire"> Sommaire</p>
+<nav>
 <ul>
 
 <li><a href="#types">Les types de balise.</a></li>
@@ -43,23 +38,20 @@
 <li><a href="#tab">  Les tableaux.</a></li>
 </ul>
 </nav>
+ </div>
+ 
+ 
+ 
+ 
+
  
  
  
  
  
 
- 
- 
- 
- 
- 
 
-
-
-
-
-
+<div class = "sec1">
 <section id="types" >
 <h2> Les types de balise </h2>	 
 <ul>  
@@ -68,8 +60,10 @@
 <li>  &lt; balise /&gt; ; balise auto-fermante. </li> 
 </ul>
  </section  >
-
+</div>
  
+ 
+<div class = "sec2">
 <section id="Structure" >
 <h2> Structure minimale d'un code HTML </h2>
 <dl>
@@ -79,8 +73,10 @@
 <dt> Le body :</dt> 	<dd>  Le contenu de la page web. &lt; body&gt; ... &lt; /body &gt;.</dd> 
 </dl>
 </section>
-	
-<section id="titres" >
+</div>	
+
+
+<section id="titres" , class="sectiontitres">
 <h2> Les titres et les sous titres : </h2>	
 <p>
 Il y a 6 niveaux de titres en html. 
@@ -96,7 +92,7 @@ Il y a 6 niveaux de titres en html.
 </section>
 	
 	
-<section id="paragraphe" >	
+<section id="paragraphe" , class="sectionparagraphe">	
 <h2> Les paragraphes : </h2>	
 		<pre>
 Un paragraphe est deux balises comme suit; 
@@ -109,7 +105,7 @@ Un paragraphe est deux balises comme suit;
 	 
 	
 	
-	<section id="tform" >	
+	<section id="tform" , class="sectionformat">	
 	<h2> Les balises du texte formaté : </h2>	
 	<pre>Un paragraphe est compris entre deux balises comme suit; 
 	
@@ -122,7 +118,7 @@ Un paragraphe est deux balises comme suit;
 	
 	
 	
-	<section id="liste">
+	<section id="liste", class="sectionliste">
 	<h2> Les listes en HTML : </h2>	
 		 
 	<p> 
@@ -162,7 +158,7 @@ Un paragraphe est deux balises comme suit;
 			
 		
 		
-	<section id = "echappe">
+	<section id = "echappe", class="sectionechapp">
     <h2> L'échappement en HTML  </h2>	
 		
 	<p> 
@@ -181,7 +177,7 @@ Un paragraphe est deux balises comme suit;
 	
 	
 		
-	<section id = "souligne">
+	<section id = "souligne", class="sectionsouligne">
 	<h2> Souligner ou mettre en gras du texte  </h2>
 	<p> 
 	Pour souligner un ou plusieurs mots, on utilise la balise &lt; mark &gt; comme suit : <br />
@@ -196,7 +192,7 @@ Un paragraphe est deux balises comme suit;
 	
 	
 	
-		
+		<div,class="sectionval">
 	<section id = "validateur">
 	<h2> Les validateurs du code HTML  </h2>	
 		<ul>
@@ -204,11 +200,11 @@ Un paragraphe est deux balises comme suit;
 		<li>  <a href="http://validator.whatwg.org/" target="_blank">Le whatwg </a> </li> 
 		</ul>
 	</section>
-	
+	</div>
 	
 
 	
-	<section id = "sturcturedetaillee">
+	<section id = "sturcturedetaillee", class="sectionavance">
 	<h2> Structure d'une page HTML avancée </h2>	
 	<p>
 Une page HTML peut contenir différenteq balise en plus des balise &lt; head&gt; et &lt;body&gt;.
@@ -252,36 +248,7 @@ Le nav qui présente le sommaire du document.
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<section id="lien" >
+<section id="lien" , class="sectionlien">
 <h2>Les liens </h2>
 <p> 
 Pour insérer un lien dans sa page, on utilise la balise  <mark>&lt; a &gt;</mark> et on 
@@ -290,8 +257,12 @@ spécifie l'attribut <mark>  href  </mark>.
 </p> 
 <p> 
  Quand on insère un lien vers une de nos pages, on utilise :
+ 
 			<mark>	&lt; a href = "new.html"&gt; Le texte à afficher&lt;/a&gt;</mark>. 
-Où new.html correspond à l'URL du dossier local. On obtient le lien comme l'exemple suivant :		
+			
+Où new.html correspond à l'URL du dossier local. 
+
+On obtient le lien comme l'exemple suivant :		
 
 <a href="new.html">Cliquer ici pour ouvrir le nouveau fichier</a>
 
@@ -320,7 +291,7 @@ Les autres valeurs de l'attribut target sont :
 
 
 
-<section id="images" >
+<section id="images" , class="sectionimg">
 <h2>Les images </h2>
 
 
@@ -349,7 +320,7 @@ Pour exemple,<br />  <mark>
 
 </section  >
 
-<section id="tab" >
+<section id="tab", class="sectiontab" >
 
 <h2>Les tableaux </h2>
 
@@ -402,7 +373,8 @@ Pour exemple,<br />  <mark>
 
  <aside>
     <p>
-      Ce cours de HTML est très enrichissant!
+      Ce cours de HTML est très enrichissant! 
+	  Amusez-vous!!
     </p>
   </aside>
 
