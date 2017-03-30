@@ -1,23 +1,36 @@
 <!doctype html>
 <head>
 <meta charset="utf-8">
-<link rel= "stylesheet" type=" text/css" href="style.css"/>
+<link rel= "stylesheet" type="text/css"  href="style.css"/>
 
 <title> ma premiere page </title>
 </head>
 
-<body>
+<body >
 
 
-<header>
-<h1>
-HTML pour les debutants
-</h1> 
+<header class="header">
+
+ <ul class="navigation">
+  <li><a href="index.html">HTML</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="CSS.html">CSS</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+
+<h1> Débuter HTML en s'amusant </h1>
+
 </header>
 
  
+ 
+ 
+<div class="wrapper">
+ 
+ 
+ 
 <div class = "sommaire">
-<p id="titresommaire"> Sommaire</p>
+<p id="titresommaire" class = "sommairetitre" > Sommaire</p>
 <nav>
 <ul>
 
@@ -30,28 +43,17 @@ HTML pour les debutants
 <li><a href="#echappe"> Les échappements en HTML.</a></li>
 <li><a href="#souligne"> Souligner ou mettre en gras du texte.</a></li>
 <li><a href="#validateur"> Les validateur du code HTML.</a></li>
-
-
 <li><a href="#sturcturedetaillee">  La structure d'une page HTML avancée.</a></li>
 <li><a href="#lien">  Les lien en html.</a></li>
 <li><a href="#images">  Les images.</a></li>
 <li><a href="#tab">  Les tableaux.</a></li>
 </ul>
 </nav>
- </div>
+</div>
  
  
- 
- 
+ <div class="decale">
 
- 
- 
- 
- 
- 
-
-
-<div class = "sec1">
 <section id="types" >
 <h2> Les types de balise </h2>	 
 <ul>  
@@ -59,66 +61,76 @@ HTML pour les debutants
 <li>  &lt; /balise &gt; ; balise fermante correspondante.</li> 
 <li>  &lt; balise /&gt; ; balise auto-fermante. </li> 
 </ul>
- </section  >
-</div>
- 
- 
-<div class = "sec2">
-<section id="Structure" >
+</section >
+
+<section id="Structure">
 <h2> Structure minimale d'un code HTML </h2>
-<dl>
-<dt> La balise qui spécifie la version :  </dt> 	<dd> Pour la <mark> version 5 </mark> : &lt;!doctype html&gt; </dd> 
-<dt> La balise head :</dt> 	<dd> &lt;head&gt; ... &lt;/head&gt;. </dd>
-<dt> Le titre :</dt> 	<dd>  elle est comprise dans la balise head. &lt; title&gt; ... &lt; /title &gt;.</dd> 
-<dt> Le body :</dt> 	<dd>  Le contenu de la page web. &lt; body&gt; ... &lt; /body &gt;.</dd> 
-</dl>
+
+<ul>
+<li> La balise qui spécifie la version : Pour la version 5 : 
+<div id="eg2">  &lt; !doctype html &gt; </div> 
+</li> 
+<li> La balise head :  
+<div id="eg7">  &lt;head&gt; ... &lt;/head&gt; </div> 
+</li>
+<li>La balise titre : elle est comprise dans la balise head.
+<div id="eg3">  &lt; title&gt; ... &lt; /title &gt;  </div> 
+</li>
+<li> Le body : Le contenu de la page web. 
+<div id="eg4"> &lt; body&gt; ... &lt; /body &gt;  </div> 
+</li> 
+</ul>
+
 </section>
-</div>	
+</div>
+</div>
 
 
-<section id="titres" , class="sectiontitres">
+
+
+<section id="titres" class="section">
 <h2> Les titres et les sous titres : </h2>	
 <p>
 Il y a 6 niveaux de titres en html. 
 </p>
 <ul>
-<li>  &lt; h1 &gt;  titre &lt;/ h1 &gt; </li> 
-<li>  &lt; h2 &gt;  sous-titre 2  &lt;/ h2 &gt;   </li> 
-<li>  &lt; h3 &gt;  sous-titre 3  &lt;/ h3 &gt;   </li> 
-<li>  &lt; h4 &gt;  sous-titre 4  &lt;/ h4 &gt;   </li> 
-<li>  &lt; h5 &gt;  sous-titre 5  &lt;/ h5 &gt;   </li> 
-<li>  &lt; h6 &gt;  sous-titre 6  &lt;/ h6 &gt;   </li> 
+<li class="itm">  &lt; h1 &gt;  titre principale &lt;/ h1 &gt; </li> 
+<li class="itm">  &lt; h2 &gt;  sous-titre niveau 2  &lt;/ h2 &gt;   </li> 
+<li class="itm">  &lt; h3 &gt;  sous-titre niveau 3  &lt;/ h3 &gt;   </li> 
+<li class="itm">  &lt; h4 &gt;  sous-titre niveau 4  &lt;/ h4 &gt;   </li> 
+<li class="itm">  &lt; h5 &gt;  sous-titre niveau 5  &lt;/ h5 &gt;   </li> 
+<li class="itm">  &lt; h6 &gt;  sous-titre niveau 6  &lt;/ h6 &gt;   </li> 
 </ul>
 </section>
 	
 	
-<section id="paragraphe" , class="sectionparagraphe">	
+<section id="paragraphe" class="section">	
 <h2> Les paragraphes : </h2>	
-		<pre>
+<p>
 Un paragraphe est deux balises comme suit; 
-		
+</p>
+<div class = "exampless">
 		&lt; p &gt;  
 		   ...	
 		&lt;/ p &gt; 
-</pre>
+</div>
 </section >	
 	 
-	
-	
-	<section id="tform" , class="sectionformat">	
+
+<section id="tform" class="section">	
 	<h2> Les balises du texte formaté : </h2>	
-	<pre>Un paragraphe est compris entre deux balises comme suit; 
-	
+	<p>Un paragraphe est compris entre deux balises comme suit; </p>
+	<div class = "exampless">
 				&lt; pre &gt;  
 					...	
 				&lt;/ pre &gt; 
-	 </pre>
-	</section >	
+	 </div>
+</section >	
 	
 	
 	
 	
-	<section id="liste", class="sectionliste">
+<section id="liste" class="section">
 	<h2> Les listes en HTML : </h2>	
 		 
 	<p> 
@@ -126,152 +138,143 @@ Un paragraphe est deux balises comme suit;
 	</p>
 	
 	<article >
-	 	<h3> Les listes ordonnées : </h3>	
-			<pre> 
-	&lt; ol &gt;
-	&lt; li &gt;  article 1 d'une liste ordonnée.&lt;/ li &gt; 
-	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; 
+	 <h3> Les listes ordonnées : </h3>	
+	<div class = "exampless"> 
+	&lt; ol &gt; <br/>
+	&lt; li &gt;  article 1 d'une liste ordonnée.&lt;/ li &gt; 	<br/>
+	&lt; li &gt;  article 2 d'une liste  ordonnée.&lt;/ li &gt; <br/>
 	&lt;/ ol &gt; 
-	</pre>
+	</div>
 	</article >	
-		<article >
+	
+	<article >
 		<h3> Les listes non ordonnées : </h3>	
-	<pre> 
-	&lt; ul &gt;
-	&lt; li &gt;  article 1 d'une liste non ordonnée.&lt;/ li &gt; 
-	&lt; li &gt;  article 2 d'une liste non ordonnée.&lt;/ li &gt; 
+	<div class = "exampless"> 
+	&lt; ul &gt; <br/>
+	&lt; li &gt;  article 1 d'une liste non ordonnée.&lt;/ li &gt; <br/>
+	&lt; li &gt;  article 2 d'une liste non ordonnée.&lt;/ li &gt; <br/>
 	&lt;/ ul &gt; 
-	</pre>
-		</article >
-		<article >
+	</div>
+	</article >
+	
+ <article >
 		<h3> Les listes de définition : </h3>	
-			<pre> 
-	&lt; dl &gt;
-	&lt; dt &gt;  terme 1.&lt;/ dt &gt;  
-		&lt; dd &gt;  la definition du terme 1.&lt;/ dd &gt; 
-	&lt; dt &gt;  terme2 .&lt;/ dt &gt;  
-		&lt; dd &gt;  la definition du terme 2.&lt;/ dd &gt; 
+			<div class = "exampless">
+	&lt; dl &gt; <br/>
+	&lt; dt &gt;  terme 1 &lt;/ dt &gt;  
+		&lt; dd &gt;  la definition du terme 1.&lt;/ dd &gt;  <br/>
+	&lt; dt &gt;  terme2 &lt;/ dt &gt;  
+		&lt; dd &gt;  la definition du terme 2.&lt;/ dd &gt; <br/>
 	&lt;/ dl &gt; 
-	</pre>	
+	</div>	
 		</article>
-		</section>
+</section>
 			
 		
 		
-	<section id = "echappe", class="sectionechapp">
+<section id = "echappe" class="section">
     <h2> L'échappement en HTML  </h2>	
 		
 	<p> 
-	 &lt; , &gt; et &amp; ne peuvent pas être écrits directement dans un texte.
+	Les caractères &lt; , &gt; et &amp; ne peuvent pas être écrits directement dans un texte.
 	</p>
 		
-	<pre> 
-	&lt; = &amp;lt;
+	<div class = "exampless">
+	
+	<p>&lt;  =  &amp;lt;</p>
 
-	&gt; = &amp;gt;
+	<p>&gt;  =  &amp;gt;</p>
 	
-	&amp; = &amp;amp;
+	<p>&amp;  =  &amp;amp;</p>
 	 
-	</pre>
-	</section>
+	</div>
+</section>
 	
 	
 		
-	<section id = "souligne", class="sectionsouligne">
+<section id = "souligne" class="section">
 	<h2> Souligner ou mettre en gras du texte  </h2>
-	<p> 
-	Pour souligner un ou plusieurs mots, on utilise la balise &lt; mark &gt; comme suit : <br />
+	<p> Pour souligner un ou plusieurs mots, on utilise la balise &lt; mark &gt; comme suit :</p>
+	
+	<div class = "exampless">
 	&lt; mark &gt; le texte souligné &lt;/ mark &gt; donne <mark> le texte souligné </mark>.
-	</p>
-	<p> 
-	Pour mettre en gras un ou plusieurs mots, on utilise la balise &lt; Strong &gt; comme suit : <br />
+	</div >
+	
+	<p>Pour mettre en gras un ou plusieurs mots, on utilise la balise &lt; Strong &gt; comme suit : </p> 
+	
+	<div class = "exampless">
 	&lt; Strong &gt; le texte en gras &lt;/ Strong &gt; donne <Strong> le texte en gras </Strong>.
-	</p>
+	</div >
 	
-	</section>
+</section>
 	
 	
 	
-		<div,class="sectionval">
-	<section id = "validateur">
+<section id = "validateur" class="section">
 	<h2> Les validateurs du code HTML  </h2>	
 		<ul>
 		<li>  <a href="http://validator.w3.org" target="_blank">  Le w3 </a> </li> 
 		<li>  <a href="http://validator.whatwg.org/" target="_blank">Le whatwg </a> </li> 
 		</ul>
-	</section>
-	</div>
+</section>
+	
 	
 
 	
-	<section id = "sturcturedetaillee", class="sectionavance">
+<section id = "sturcturedetaillee" class="section">
 	<h2> Structure d'une page HTML avancée </h2>	
 	<p>
 Une page HTML peut contenir différenteq balise en plus des balise &lt; head&gt; et &lt;body&gt;.
 	</p>
 	
-<p> 
-Le header qui peut contenir le titre.
-</p>
 
-				<pre>
-				&lt;header&gt;.
-				&lt;h1&gt;. Le titre du document &lt;/h1&gt;.
-				&lt;/header&gt;.
-				</pre>
-				
 
-<p> 
-Le nav qui présente le sommaire du document.
-</p>
 
-	
-<pre> 
-			
-		&lt; nav &gt;
-		&lt; ul &gt;
-		&lt; li > &lt; a href="#identifiant" &gt; l'article ou la section. &lt; /a &gt;. &lt; /li &gt;					
-		&lt;/ ul &gt;							
-		&lt;/ nav &gt;		
-</pre> 			
+
+<ul> 
+<li> Le header qui peut contenir le titre.
+				<div class = "exampless">
+				&lt;header&gt; <br/>
+				&lt;h1&gt; Le titre du document &lt;/h1&gt;<br/>
+				&lt;/header&gt;
+				</div>
 				
-				
-	</section>
+</li>
+<li> Le nav qui présente le sommaire du document. 
+		<p class="itmc">&lt; nav &gt;</p>
+		<p class="itmc">&lt; ul &gt;</p>
+		<p class="itmc">&lt; li > &lt; a href="#identifiant" &gt; l'article ou la section. &lt; /a &gt;. &lt; /li &gt;</p>					
+		<p class="itmc">&lt;/ ul &gt;	</p>						
+		<p class="itmc">&lt;/ nav &gt;	</p>				
+</li>			
+</ul>				
+</section>
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-<section id="lien" , class="sectionlien">
+<section id="lien" class="section">
 <h2>Les liens </h2>
 <p> 
-Pour insérer un lien dans sa page, on utilise la balise  <mark>&lt; a &gt;</mark> et on 
-spécifie l'attribut <mark>  href  </mark>.
-
-</p> 
+Pour insérer un lien dans sa page, on utilise la balise &lt; a &gt; et on 
+spécifie l'attribut href.</p> 
 <p> 
  Quand on insère un lien vers une de nos pages, on utilise :
- 
-			<mark>	&lt; a href = "new.html"&gt; Le texte à afficher&lt;/a&gt;</mark>. 
-			
-Où new.html correspond à l'URL du dossier local. 
-
-On obtient le lien comme l'exemple suivant :		
-
+ </p> 
+<p class="itmc">
+			&lt; a href = "new.html"&gt; Le texte à afficher&lt;/a&gt;. 
+</p> 
+<p>			
+Où new.html correspond à l'URL du dossier local. On obtient le lien comme l'exemple suivant :		
+</p> 
+<p>
 <a href="new.html">Cliquer ici pour ouvrir le nouveau fichier</a>
 
 </p>
 
-Pour ouvrir le lien dans un novel onglet, on spécifie l'attribut <mark>target = "_blank"</mark>.
-<p> 
- Sinon, pour l'ouvrir dans le même onglet, on spécifie l'attribut <mark>target = "_self"</mark>. 
-</p> 
+Pour ouvrir le lien dans un novel onglet, on spécifie l'attribut target = "_blank".<p> 
+Sinon, pour l'ouvrir dans le même onglet, on spécifie l'attribut target = "_self".</p> 
 <p>
 Les autres valeurs de l'attribut target sont :
 </p>
@@ -291,28 +294,28 @@ Les autres valeurs de l'attribut target sont :
 
 
 
-<section id="images" , class="sectionimg">
+<section id="images" class="section" >
 <h2>Les images </h2>
 
 
 <p>
 Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&gt; avec deux attributs : src et alt <br />    
-    &lt; img src = "le URL avec l'extention" alt="une description de l'image" />.<br /> 
+    &lt; img src = "le URL avec l'extention" alt="une description de l'image" />.</p>
 
-Pour exemple,<br />  <mark> 
+<p>Pour exemple,</p>
+
+<div class = "exampless">  
 &lt;img src="images.jpg" alt="Photo de chaton" /&gt; 
-</mark> <br /> 
-. Où la description apparaît quand l'image n'apparaît pas à cause du navigateur par exemple.
+
+ </div> 
+ 
+<p> Où la description apparaît quand l'image n'apparaît pas à cause du navigateur par exemple.
 </p>
-
-
-
-
 
 <p>
- Voici une photo de chaton :<br />
+ Voici une photo de chaton :
 </p>
-    <img src="images.jpg" alt="Photo de chaton" />
+    <img class="itmc" src="images.jpg" alt="Photo de chaton" />
 
 
 
@@ -320,7 +323,7 @@ Pour exemple,<br />  <mark>
 
 </section  >
 
-<section id="tab", class="sectiontab" >
+<section id="tab" class="section">
 
 <h2>Les tableaux </h2>
 
@@ -364,22 +367,22 @@ Pour exemple,<br />  <mark>
 <th>Lieu de naissance</th>
  </tr>
 </tfoot>
-
 </table>
 
 </section  >
 
 
 
- <aside>
-    <p>
+ <aside class="section aside">
+    <div>
       Ce cours de HTML est très enrichissant! 
 	  Amusez-vous!!
-    </p>
+    </div>
   </aside>
+  
 
 
-<footer>
+<footer class=" section footer">
   <p>Pour plus d'information, contactez Sahab OMRAN</p>
   <p>Adresse de messagerie: <a href="mailto:sasa.miou@gmail.com">
   sasa.miou@gmail.com</a>.</p>

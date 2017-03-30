@@ -1,177 +1,160 @@
+@import "compass/css3";
+
+
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 h1{ 
   font-family: ThreeDLightShadow;        
-  background: #99AAFF;   
-  color: white;              
+  color:#7700FF;              
   font-size: 35px;             
-  text-align: center;  
-}
-header{
-background: #99AAFF; 
-border-style: solid;
-border-width: 10px;
-border-color: #99AAFF; 
-}
-
-h2{ 
-  font-family: ThreeDLightShadow; 
-  color: #1133bb;              
-  font-size: 22px;             
-  text-align: left;  
-}
-
-h3{ 
-  font-family: ThreeDLightShadow; 
-  color: #1133bb;              
-  font-size: 17px;             
   text-align: left; 
+ position: relative; 
+	 left:30px;
+	 top:10px;  
 }
+
 
 .sommaire{
-	height:420px;
-    width: 200px;
+    width:25%;
+	min-width: 240px;
      position: relative; 
-     top: 30px; 
-     left:0px;
-	 border-style: solid;
-border-width: 3px;
-border-color: #aaaaff;              
+	 left:15px;
+	 top:40px;
+	 border-style: double;
+     border-width: 4px;
+border-color: black;              
   font-size: 16px; 
-}
-
-
-#titresommaire{
-	color: #1133cc;
-  font-size: 19px;             
-  text-align: center; 
-}
-
-/*--------------------------*/
-aside{
-	height: 90px;
-    width: 250px;
-     position: relative; 
-     top: -330px; 
-     left: 260px;
-	 border-style: solid;
-border-width: 5px;
-border-color: #aa8844;  
- color: #ff9900;              
-  font-size: 16px; 
+      background:rgba(255,200,255,0.2);
+	  line-height:27px;
+	  
 }
 
 
 
-
-/*---------------------------------*/
-
-
-.sec1{
-	 position: relative; 
-     top: -380px; 
-     left: 260px;
+.sommairetitre{
+	font-family: ThreeDLightShadow;
+	 font-size: 30px; 
+	 color:#7700FF;
+	 text-align: center; 
 }
 
 
-
-.sec2{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectiontitres{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectionparagraphe{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-
-.sectionformat{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-.sectionliste{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectionechapp{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-
-.sectionsouligne{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-#validateur{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-
-.sectionavance{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectionlien{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectionimg{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-
-
-.sectiontab{
-	 position: relative; 
-     top: -350px; 
-     left: 260px;
-}
-
-footer{
+.decale{
 	position: relative; 
-     top: -30px; 
-     left: 260px;
+	 left:40px;
+	 top:30px;
+}
+h2{ 
+  font-family: ThreeDLightShadow;        
+  color:#520052;              
+  font-size: 24px;             
+  text-align: left; 
+ position: relative; 
+	 left:25px;
+	 top:10px; 
+border-bottom:1px solid black;	 
+}
+
+
+/**-------background: #99AAFF;-----------------------------------------*/
+
+
+
+.section{
+	position: relative; 
+	 left:40px;
+	 top:40px;
+}
+
+
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: deepskyblue;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+ }
+
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size:22px;
+  text-align: center; 
+  padding: 15px;
+  border-top: 1px solid rgba(255,255,255,0.3); 
+  border-bottom: 1px solid rgba(0,0,0,0.1); 
+}
+
+
+/* cette propriété sert pour gérer automatiquement l'espace entre les éléments du header*/
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+ 
+}
+
+
+
+#eg5{
+	  padding: 5px;
+	text-align: center;
+}
+
+#eg2{
+	  padding: 5px;
+	text-align: center;
+}
+
+#eg3{
+	  padding: 5px;
+	text-align: center;
+}
+#eg4{
+	  padding: 5px;
+	text-align: center;
+}
+#eg7{
+	  padding: 5px;
+	text-align: center;
+}
+
+
+.exampless{
+	line-height:25px;
+	position:relative;
+	left : 250px;
+	}
+
+
+
+.itm{
+	margin:8px;
+	}
+
+	
+.itmc{
+	margin:5px;
+	position:relative;
+	left : 250px;
+	}
+	
+.aside{
+	margin:25px;
+	padding:10;
+border-style:outset;	
 }
