@@ -23,18 +23,6 @@
 <h1> Formater votre page web avec CSS 3 </h1>
 </header>
  
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  
 <div class="wrapper">
 
 <div class = "sommaire">
@@ -71,6 +59,41 @@ La balise &lt;div&gt; est un bloc, ou un objet rectangulaire qui peut occuper
 plusieurs lignes. Les attributs de &lt;div&gt; sont: position, margin, padding, width, height. 
 Elle est précédée et suivie d'un saut de ligne.
 </p>
+<article>
+<p>
+Margi: cet attribut permet d'ajouter une marge interne de tous les cotés :
+ haut, bas, droite, gauche. 
+ <ul class="marge">
+ <li> pour siasir la marge, on utilise : 
+  <ul>
+   <li > margin-top : 10px; </li>
+   <li > margin-bottom : 10px; </li>
+   <li > margin-left : 10px; </li>
+   <li> margin-right : 10px; </li>
+ </ul>
+ </li>
+ 
+ <li>Si on choisit la même valeur pour les quatre cotés: 
+ <p class="marge"> margin : 10px; </p>
+ </li>
+ 
+ <li>Si on choisit une valeur (5px) pour haut/bas et une autre valeur (10px)
+ pour droite/gauche : 
+ <p class="marge"> margin:5px 10px; </p>
+ </li>
+ 
+  <li>Si on choisit une valeur différente pour chaque coté: 
+ <p class="marge"> margin:2px 3px 4px 5px;  Cela correspond à: </p>
+ <p>  margin : haut droite bas gauche (dans le sens des éguilles d'une montre).</p>
+ </li>
+ 
+ </ul>
+ 
+
+</p>
+</article>
+
+
 
 </section>
 </div>
@@ -85,8 +108,7 @@ Elle est précédée et suivie d'un saut de ligne.
 <h2> La balise &lt;span&gt; </h2>	
 <p>
 La balise &lt;span&gt; est inline, elle s'inscrit dans le flux du contenu. 
- Elle ne possède pas de hauteur, ni de largeur.
-&lt;span&gt; n'a pas de saut de ligne. Elle peut s'appliquer au texte dans 
+&lt;span&gt; ne produit pas de saut de ligne. Elle peut s'appliquer au texte dans 
 un paragraphe pour délimiter une phrase.
 </p> 
 </section>
@@ -95,7 +117,7 @@ un paragraphe pour délimiter une phrase.
 	 
 
 	
-
+<!--  new section-->
 		
 <section id="selecteur" class="section">
 <h2> Les selecteurs : </h2>	
@@ -103,9 +125,18 @@ un paragraphe pour délimiter une phrase.
 Il y a plusieurs selecteurs en CSS: 
 </p>
 <ul>
-<li> Les selecteurs d'élément : en utilisant le nom d'élément
+<li> Le selecteur d'élément (element): en utilisant le nom d'élément
  comme h1, h2, p,... etc.</li>
-<li>  .</li>
+<li>  Le selecteur de classe (.class): il s'applique à tous les éléments qui possèdent
+ la classe.</li>
+ <li>  Le selecteur d'id (#id): il s'applique à un élément unique en utilisant son id (unique).</li>
+ <li>  Le selecteur de voisin direct (élément 1+ élément 2): par exemple, p+div s'applique à tous
+ les paragraphes qui sont suivis d'un div. .</li>
+ <li>  Le selecteur de voisin indirect ( élément 1~ élément 2) : par exemple, img ~ a s'applique
+ à toutes les images qui sont suivies d'un lien. .</li>
+ <li>  Le selecteur d'enfant direct (élément 1 > élément 2): par exemple, div > p s'applique à tous 
+ les paragraphes qui descendants immédiats d'un div. .</li>
+ <li>Le selecteur universel (*) : il s'applique à tous les éléments.
 </ul>
 </section>	
 	

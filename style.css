@@ -69,7 +69,7 @@ border-bottom:1px solid black;
 	position: relative; 
 	 left:40px;
 	 top:-35px;
-	 width:60%;
+	 width:68%;
 }
 
 
@@ -217,7 +217,9 @@ input:invalid{
 }
 
 
-
+.marge{
+	line-height:20px;
+}
 
 
 	
