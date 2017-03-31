@@ -8,25 +8,23 @@
 
 <body >
 
-
-<header class="header">
-
- <ul class="navigation">
+<header>
+<div >
+<img  src="logo.png" alt="logo" />
+</div>
+<div class="bluebas">
+<ul class="navigation">
   <li><a href="index.html">HTML</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="CSS.html">CSS</a></li>
   <li><a href="Contact.html">Contact</a></li>
 </ul>
-
+</div>
 <h1> Débuter HTML en s'amusant </h1>
 
 </header>
-
- 
- 
  
 <div class="wrapper">
- 
  
  
 <div class = "sommaire">
@@ -93,14 +91,14 @@
 <p>
 Il y a 6 niveaux de titres en html. 
 </p>
-<ul>
-<li class="itm">  &lt; h1 &gt;  titre principale &lt;/ h1 &gt; </li> 
-<li class="itm">  &lt; h2 &gt;  sous-titre niveau 2  &lt;/ h2 &gt;   </li> 
-<li class="itm">  &lt; h3 &gt;  sous-titre niveau 3  &lt;/ h3 &gt;   </li> 
-<li class="itm">  &lt; h4 &gt;  sous-titre niveau 4  &lt;/ h4 &gt;   </li> 
-<li class="itm">  &lt; h5 &gt;  sous-titre niveau 5  &lt;/ h5 &gt;   </li> 
-<li class="itm">  &lt; h6 &gt;  sous-titre niveau 6  &lt;/ h6 &gt;   </li> 
-</ul>
+<div class = "exampless">
+<p class="itm">  &lt; h1 &gt;  titre principale &lt;/ h1 &gt; </p> 
+<p class="itm">  &lt; h2 &gt;  sous-titre niveau 2  &lt;/ h2 &gt;   </p> 
+<p class="itm">  &lt; h3 &gt;  sous-titre niveau 3  &lt;/ h3 &gt;   </p> 
+<p class="itm">  &lt; h4 &gt;  sous-titre niveau 4  &lt;/ h4 &gt;   </p> 
+<p class="itm">  &lt; h5 &gt;  sous-titre niveau 5  &lt;/ h5 &gt;   </p> 
+<p class="itm">  &lt; h6 &gt;  sous-titre niveau 6  &lt;/ h6 &gt;   </p> 
+</div>
 </section>
 	
 	
@@ -280,10 +278,10 @@ Les autres valeurs de l'attribut target sont :
 </p>
 
 <ul>
-<li> blank</li> 
-<li> parent</li> 
-<li> self </li> 
-<li> top </li> 
+<li> _parent : Ouverture de la page cible dans le cadre parent ( de niveau immédiatement supérieur).</li> 
+<li> _top : Ouverture de la page cible dans la fenêtre hôte.</li> 
+<li> framename : Ouverture de la page cible dans le cadre portant le nom cité ( valeur de l'attribut name ).</li> 
+<li>_media et _search sont disponibles uniquement avec Internet Explorer 6 ou ultérieeur.</li>
 </ul>
 
 </section >
@@ -327,15 +325,16 @@ Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&g
 
 <h2>Les tableaux </h2>
 
-
-<table>
-<caption> Table d'état civiles  </caption>
+<p> Les tableaux sont définis comme des lignes et des cellules. </p> 
+<table class="tabPosition">
+<caption > Table d'état civiles  </caption>
 <thead>
 <tr>
 <th> Nom </th> 
 <th> Prénom(s)  </th>
 <th>  Date de naissance  </th>
 <th>  Lieu de naissance  </th>
+<th>  Situation familiale  </th>
 </tr>
 </thead>
 
@@ -343,28 +342,32 @@ Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&g
 <td> Toto </td>
 <td> Bobo </td>
 <td colspan = "2"> inconnus  </td>
+<td> marié </td>
 </tr>
 
 <tr>
 <td> Tata </td>
 <td> Baba </td>
-<td > 05 / 05 / 2000  </td>
+<td > 05 / 05 / 1990  </td>
 <td > Lyon  </td>
+<td> marié </td>
 </tr>
 
 <tr>
 <td> Titi </td>
 <td> Bibi  </td>
-<td >  02 / 10 / 1999 </td>
+<td >  02 / 10 / 1989 </td>
 <td > Saint Pierre des Corps </td>
+<td> célibataire </td>
 </tr>
 
 <tfoot>
 <tr>
 <th> Surname </th> 
 <th> Name </th>
-<th>Date de naissance</th>
-<th>Lieu de naissance</th>
+<th> Birth Date </th>
+<th> Birthplace </th>
+<th> Family situation </th>
  </tr>
 </tfoot>
 </table>
