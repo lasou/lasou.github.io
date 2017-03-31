@@ -27,7 +27,7 @@ width:60%;
 	 top:-70px;
 	/* border-style: double;
      border-width: 4px;
-	border-color: black;  */            
+	border-color: black; */            
 	font-size: 16px; 
      background:rgba(190,190,255,0.5);
 	 line-height:27px;
@@ -186,3 +186,38 @@ td{
 	padding:19;
 border-style:outset;	
 }
+
+
+
+input:valid{
+	background-color:#99ff99;
+}
+input:invalid{
+	background-color:#ff9999;
+}
+
+
+
+
+.delimite{
+	margin:1em;
+}
+
+
+
+.delimite2{
+	position:relative;
+	height:40px;
+	 
+}
+
+
+.couperLargeur{
+	width:60%;
+}
+
+
+
+
+
+	

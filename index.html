@@ -41,10 +41,11 @@
 <li><a href="#echappe"> Les échappements en HTML.</a></li>
 <li><a href="#souligne"> Souligner ou mettre en gras du texte.</a></li>
 <li><a href="#validateur"> Les validateur du code HTML.</a></li>
-<li><a href="#sturcturedetaillee">  La structure d'une page HTML avancée.</a></li>
+<li><a href="#sturcturedetaillee"> Structure HTML avancée.</a></li>
 <li><a href="#lien">  Les lien en html.</a></li>
 <li><a href="#images">  Les images.</a></li>
 <li><a href="#tab">  Les tableaux.</a></li>
+<li><a href="#formu">  Les formulaire.</a></li>
 </ul>
 </nav>
 </div>
@@ -374,14 +375,206 @@ Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&g
 
 </section  >
 
+<section id="formu" class="section">
+
+<h2>Les formulaires en HTML </h2>
 
 
- <aside class="section aside">
-    <div>
-      Ce cours de HTML est très enrichissant! 
+
+<form action="" method="post">
+<p> Veuillez compléter ces champs ! </p>
+<div class="delimite">
+<label for="name">
+Nom, prénom(s):
+</label>
+<input type="text" name="user_name" id="name"/>
+</div>
+<div class="delimite">
+<label for="date">
+Date de naissance:
+</label>
+<input type="date" name="user_date" id="date"/>
+</div>
+<div class="delimite">
+<label for="lieu">
+Lieu de naissance:
+</label>
+<input type="text" name="user_lieu" id="lieu"/>
+</div>
+<div class="delimite">
+<label for="mel">
+Adresse Email : 
+</label>
+<input type="mail" name="user_mail" id="mel"/>
+</div>
+<div class="delimite">
+<label for="tel">
+Numéro de téléphone:
+</label>
+<input type="text" name="user_tel" id="tel"/>
+</div>
+
+<div class="delimite2">
+
+</div>
+
+
+
+
+
+<div class ="delimite">
+<input type="checkbox" id="cbox1" >
+<label for="cbox1">
+ J'accepte recevoir des mail de la part de Gimini.
+ </label>
+ </div>
+<div class ="delimite">
+
+<input type="checkbox" id="cbox2" >
+<label for="cbox2">
+J'accepte recevoir des SMS de la part de Gimini..
+ </label>
+</div>
+
+
+<div class="delimite">
+<label for="texreq">
+L'établissement d'affiliation* 
+</label>
+<input type="text"  required id="texreq" >
+</div>
+ 
+ 
+<fieldset>
+    <legend>Choisissez le formule souhaité </legend>
+	<div class="delimite">
+    <input type="radio" name="radio" id="radio3">
+    <label for="radio3">Hôtel seul</label>
+	</div>
+	<div class="delimite">
+	<input type="radio" name="radio" id="radio4">
+	<label for="radio4">Hôtel + repas</label>
+	</div>
+	<div class="delimite">
+	<input type="radio" name="radio" id="radio5" value="couleur1">
+    <label for="radio5">Hôtel + repas +voiture </label>
+	</div>
+</fieldset>
+ 
+ 
+ 
+ <div class="delimite">
+ <label for="select1"> Choisissez une valeurs</label>
+ <select name="select1">
+  <option value = "1" >
+ choix 1
+ </option>
+  <option value = "2" >
+ choix 2
+ </option>
+ <option value = "3" >
+ choix 3
+ </option>
+  </select>
+ </div>
+ 
+  <div class="delimite">
+ <label for="select2"> Choisissez une valeurs</label>
+ <select name="select2" multiple>
+ <option value = "1" >
+ choix 1
+ </option>
+ <option value = "2" >
+ choix 2
+ </option>
+  <option value = "3" >
+ choix 3
+ </option>
+ </select>
+ </div>
+ 
+ 
+ 
+ 
+  <div class="delimite">
+ <label for="select3"> Choisissez une valeurs</label>
+ <select name="select3" >
+ <optgroup label="grouper1">
+ <option value = "1" >
+ choix 1
+ </option>
+ <option value = "2" >
+ choix 2
+ </option>
+ </optgroup>
+ 
+ 
+ <optgroup label="grouper1">
+ <option value = "3" >
+choix 3
+</option>
+ <option value = "2" >
+ choix 2
+ </option>
+ </optgroup>
+ 
+ 
+<option value = "3" >
+choix 3
+</option>
+</select>
+  </div>
+ 
+ <div class ="delimite"> 
+<label for="desc">
+Faites nous connaitre votre avis : 
+</label>
+<textarea  name="desc" id="desc" >
+</textarea>
+</div>
+ 
+ 
+ <div >
+ <button type="submit" >
+ Envoyer! 
+</button>
+<button type="reset" >
+ Reinitialiser! 
+</button>
+</div>
+
+</form>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <aside class="section aside ">
+    <div class="delimite2">
+     <p> Ce cours de HTML est très enrichissant! 
 	  Amusez-vous!!
+	  </p>
     </div>
-  </aside>
+ </aside>
   
 
 

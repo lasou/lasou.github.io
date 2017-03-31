@@ -1,0 +1,170 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+
+<link rel= "stylesheet" type=" text/css" href="style.css"/>
+
+<link rel= "stylesheet" type=" text/css" href="reset_css.css"/>
+
+<title> ma premiere page css </title>
+</head>
+
+<body>
+<header>
+<h1>
+Les formulaires en HTML
+</h1>
+</header>
+
+
+
+<div>
+<p> ...</p>
+
+<p> ...</p>
+<p> ...</p>
+ </div>
+
+
+<form action="" method="post">
+
+<label for="name">
+Nom:
+</label>
+<input type="text" name="user_name" id="name"/>
+
+
+<label for="mel">
+Email:
+</label>
+<input type="mail" name="user_mail" id="mel"/>
+
+<label for="date">
+Date de naissance:
+</label>
+<input type="date" name="user_date" id="date"/>
+
+
+
+<label for="desc">
+Commentaire : 
+</label>
+
+<textarea  name="desc" id="desc" >
+</textarea>
+
+
+
+
+<input type="checkbox" id="cbox1" >
+<label for="cbox1">
+  Voici la premiere case.
+ </label>
+
+
+<input type="checkbox" id="cbox2" >
+<label for="cbox2">
+  Voici la seconde case.
+ </label>
+
+
+<input type="radio" id="rd1" >
+<label for="rd1">
+  Voici la première case.
+ </label>
+
+<input type="radio" id="rd2" >
+<label for="rd2">
+  Voici la seconde case.
+ </label>
+
+
+<label for="texreq">
+ Completez* 
+</label>
+<input type="text"  required id="texreq" >
+ 
+ 
+ 
+  <fieldset>
+    <legend>un groupe de </legend>
+    <input type="radio" name="radio" id="radio3">
+    <label for="radio3">Cliquez moi</label>
+	<input type="radio" name="radio" id="radio4">
+    <label for="radio4">Cliquez moi</label>
+	<input type="radio" name="radio" id="radio5" value="couleur1">
+    <label for="radio5">Cliquez moi</label>
+  </fieldset>
+ 
+ 
+ 
+ 
+ 
+ <select name="sel">
+ 
+ <option value = "1" >
+ choix 1
+ </option>
+ 
+ 
+ 
+ <option value = "2" >
+ choix 2
+ </option>
+ <option value = "3" >
+ choix 3
+ </option>
+  </select>
+ 
+ 
+  
+ <select name="sel" multiple>
+ <option value = "1" >
+ choix 1
+ </option>
+ <option value = "2" >
+ choix 2
+ </option>
+  <option value = "3" >
+ choix 3
+ </option>
+ </select>
+ 
+ 
+ 
+ 
+ 
+   
+ <select name="sel" >
+  <optgroup label="grouper1">
+ 
+ <option value = "1" >
+ choix 1
+ </option>
+ <option value = "2" >
+ choix 2
+ </option>
+ </optgroup>
+ 
+<option value = "3" >
+choix 3
+</option>
+</select>
+ 
+ <div>
+ 
+<button type="submit" >
+ Envoyer! 
+</button>
+
+
+<button type="reset" >
+ Reinitialiser! 
+</button>
+</div>
+
+</form>
+
+
+
+</body>
