@@ -17,21 +17,21 @@ width:60%;
 	 left:350px;
 	 top:10px;  
 }
-
+ 
 
 .sommaire{
     width:25%;
-	min-width: 240px;
-     position: sticky; 
-	 left:5px;
-	 top:-70px;
+	height: 60%;
+	min-width:240px;
+	position: sticky; 
+	 top:10%; 
 	/* border-style: double;
      border-width: 4px;
 	border-color: black; */            
 	font-size: 16px; 
-     background:rgba(190,190,255,0.5);
+     background:rgb(190,190,255);
 	 line-height:27px;
-	  
+	   
 }
 
 
@@ -46,15 +46,17 @@ width:60%;
 
 .decale{
 	position: relative; 
-	 left:40px;
-	 top:30px;
+	 left:33px;
+	 top:0px;
+	  width:40%;
+	 /* overflow: scroll;*/
 	 }
 h2{ 
   font-family: ThreeDLightShadow;        
   color:#520052;              
   font-size: 24px;             
   text-align: left; 
- position: relative; 
+  position: relative; 
 	 left:25px;
 	 top:10px; 
 border-bottom:1px solid black;	 
@@ -65,19 +67,14 @@ border-bottom:1px solid black;
 
 
 
-.section{
-	position: relative; 
-	 left:400px;
-	 top:-35px;
-	 width:50%;
-}
+
 
 
 
 .navigation {
   list-style: none;
   margin: 0; 
-  background:rgba(0,0,111,1);
+  background:rgb(0,0,111);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -86,6 +83,7 @@ border-bottom:1px solid black;
   -webkit-flex-flow: row wrap;
   justify-content: center;
   border-bottom: 4px solid rgb(130,220,255);
+ 
   }
 
 
@@ -183,10 +181,21 @@ td{
 	
 .aside{
 	margin:45px;
-	padding:19;
-border-style:outset;	
+	padding-top:19px;
+	padding-bottom:19px;
+	padding-left:0;
+	padding-right:0;
+border-style:outset;
+	
 }
 
+.fin{
+	position :relative;
+	left:330px;
+	top:-420px;
+	width:60%;
+	height:10%;
+}
 
 
 input:valid{
