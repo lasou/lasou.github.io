@@ -22,7 +22,7 @@ width:60%;
 .sommaire{
     width:25%;
 	min-width: 240px;
-     position: relative; 
+     position: sticky; 
 	 left:5px;
 	 top:-70px;
 	/* border-style: double;
@@ -67,9 +67,9 @@ border-bottom:1px solid black;
 
 .section{
 	position: relative; 
-	 left:40px;
+	 left:400px;
 	 top:-35px;
-	 width:68%;
+	 width:50%;
 }
 
 
