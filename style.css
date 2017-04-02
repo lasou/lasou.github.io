@@ -7,59 +7,58 @@
   flex-flow: row wrap;
 }
 
-h1{ 
+h1{
 width:60%;
-  font-family: ThreeDLightShadow;        
-  color:#000088;              
-  font-size: 28px;             
-  text-align: left; 
-	position: relative; 
+  font-family: ThreeDLightShadow;
+  color:#000088;
+  font-size: 27px;
+  text-align: left;
+	position: relative;
 	 left:350px;
-	 top:10px;  
+	 top:68px;
 }
- 
+
 
 .sommaire{
-    width:25%;
+    width:22%;
 	height: 60%;
 	min-width:240px;
-	position: sticky; 
-	 top:10%; 
-	/* border-style: double;
+	position: sticky;
+	 top:15%;
+	border-style: double;
      border-width: 4px;
-	border-color: black; */            
-	font-size: 16px; 
+	border-color: white;
+	 border-radius:15px;
+	font-size: 16px;
      background:rgb(190,190,255);
 	 line-height:27px;
-	   
-}
 
-
+	}
 
 .sommairetitre{
 	font-family: ThreeDLightShadow;
-	 font-size: 30px; 
+	 font-size: 30px;
 	 color:#7700FF;
-	 text-align: center; 
+	 text-align: center;
 }
 
 
 .decale{
-	position: relative; 
-	 left:33px;
-	 top:0px;
-	  width:40%;
+	 position: relative;
+	 left:3em;
+	 top:4em;
+	 width:40%;
 	 /* overflow: scroll;*/
 	 }
-h2{ 
-  font-family: ThreeDLightShadow;        
-  color:#520052;              
-  font-size: 24px;             
-  text-align: left; 
-  position: relative; 
+h2{
+  font-family: ThreeDLightShadow;
+  color:#520052;
+  font-size: 24px;
+  text-align: left;
+  position: relative;
 	 left:25px;
-	 top:10px; 
-border-bottom:1px solid black;	 
+	 top:10px;
+border-bottom:1px solid black;
 }
 
 
@@ -73,7 +72,7 @@ border-bottom:1px solid black;
 
 .navigation {
   list-style: none;
-  margin: 0; 
+  margin: 0;
   background:rgb(0,0,111);
   display: -webkit-box;
   display: -moz-box;
@@ -83,7 +82,7 @@ border-bottom:1px solid black;
   -webkit-flex-flow: row wrap;
   justify-content: center;
   border-bottom: 4px solid rgb(130,220,255);
- 
+
   }
 
 
@@ -92,7 +91,7 @@ border-bottom:1px solid black;
   display: block;
   color: white;
   font-size:22px;
-  text-align: center; 
+  text-align: center;
   padding: 15px;
 
 }
@@ -104,7 +103,7 @@ border-bottom:1px solid black;
     justify-content: space-around;
   }
 }
- 
+
 }
 
 
@@ -145,13 +144,13 @@ border-bottom:1px solid black;
 	margin:8px;
 	}
 
-	
+
 .itmc{
 	margin:5px;
 	position:relative;
 	left : 250px;
 	}
-	
+
 	/*-------------------------------------------------*/
 	table{
     border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
@@ -178,7 +177,7 @@ td{
 	left : 50px;
 	 }
 /*---------------------------------*/
-	
+
 .aside{
 	margin:45px;
 	padding-top:19px;
@@ -186,7 +185,7 @@ td{
 	padding-left:0;
 	padding-right:0;
 border-style:outset;
-	
+
 }
 
 .fin{
@@ -217,7 +216,7 @@ input:invalid{
 .delimite2{
 	position:relative;
 	height:40px;
-	 
+
 }
 
 
@@ -226,9 +225,78 @@ input:invalid{
 }
 
 
+/* */
+.bluebas{
+	position:fixed;
+    top:0%;
+	left:0;
+	right:0;
+}
+
+.navig {
+  list-style: none;
+  margin: 0;
+  background:rgb(0,0,111);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  border-bottom: 4px solid rgb(130,220,255);
+
+  }
+
+
+.navig a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size:22px;
+  text-align: center;
+  padding: 15px;
+
+  }
+
+}
+
+
+/* cette propriété sert pour gérer automatiquement l'espace entre les éléments du header*/
+@media all and (max-width: 800px) {
+  .navig {
+    justify-content: space-around;
+
+}
+
+}
+
+
+
+
+.divex{
+	position:relative;
+	left:50px;
+	line-height:2px;
+}
+
+
+
+.ls{
+	position:relative;
+	line-height:2px;
+	left:50px;
+}
+
+
 .marge{
 	line-height:20px;
 }
 
 
-	
+
+#body2{
+	min-width:80%;
+}
+
+

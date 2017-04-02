@@ -6,24 +6,17 @@
 <title> les  a b c de css </title>
 </head>
 
-<body >
-
+<body class="large" id="body2" >
 <header>
 <!--
 <div >
 <img  src="logo.png" alt="logo" />
 </div>
 -->
-<div class="bluebas">
-<ul class="navigation">
-  <li><a href="index.html">HTML</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="CSS.html">CSS</a></li>
-  <li><a href="Contact.html">Contact</a></li>
-</ul>
-</div>
+ 
 <h1> Formater votre page web avec CSS 3 </h1>
 </header>
+
  
 <div class="wrapper">
 
@@ -35,7 +28,14 @@
 <li><a href="#intro"> Le langage CSS</a></li>
 <li><a href="#bloc">La balise &lt;div&gt;./a></li>
 <li><a href="#ligne"> La balise &lt;span&gt;./a></li> 
+<li><a href="#style"> L'introduction du style </a></li>
 <li><a href="#selecteur"> Les selecteurs</a></li>
+<li><a href="#pos"> La position</a></li>
+<li><a href="#unites"> Les unités</a></li>
+<li><a href="#couleur"> Les couleurs</a></li>
+<li><a href="#bordure"> La bordure</a></li> 
+<li><a href="#pseudo"> Les pseudo-classes</a></li> 
+<li><a href="#pseudoelement"> Les pseudo-éléments</a></li> 
 </ul>
 </nav>
 </div>
@@ -61,10 +61,10 @@ La balise &lt;div&gt; est un bloc, ou un objet rectangulaire qui peut occuper
 plusieurs lignes. Les attributs de &lt;div&gt; sont: position, margin, padding, width, height. 
 Elle est précédée et suivie d'un saut de ligne.
 </p>
-<article>
+<div >
 <p>
-Margi: cet attribut permet d'ajouter une marge interne de tous les cotés :
- haut, bas, droite, gauche. 
+Margin: permet d'ajouter une marge interne de tous les cotés :
+ haut, bas, droite, gauche. </p>
  <ul class="marge">
  <li> pour siasir la marge, on utilise : 
   <ul>
@@ -76,35 +76,24 @@ Margi: cet attribut permet d'ajouter une marge interne de tous les cotés :
  </li>
  
  <li>Si on choisit la même valeur pour les quatre cotés: 
- <p class="marge"> margin : 10px; </p>
+ <p class="ls"> margin : 10px; </p>
  </li>
  
  <li>Si on choisit une valeur (5px) pour haut/bas et une autre valeur (10px)
  pour droite/gauche : 
- <p class="marge"> margin:5px 10px; </p>
+ <p class="ls"> margin:5px 10px; </p>
  </li>
  
-  <li>Si on choisit une valeur différente pour chaque coté: 
- <p class="marge"> margin:2px 3px 4px 5px;  Cela correspond à: </p>
- <p>  margin : haut droite bas gauche (dans le sens des éguilles d'une montre).</p>
+ <li>Si on choisit une valeur différente pour chaque coté: 
+ <p class="ls"> margin:2px 3px 4px 5px;  Cela correspond à: </p>
+ <p class="ls">  margin : haut droite bas gauche (dans le sens des éguilles d'une montre).</p>
  </li>
- 
- </ul>
- 
-
-</p>
-</article>
-
-
-
+  </ul>
+  <p>
+Padding : permet d'ajouter une marge externe, sa valeur est spécifiée 
+comme l'attribut margin.  </p>
+</div>
 </section>
-
-
- 
- 
- 
-   
-
 
 <section id="ligne">
 <h2> La balise &lt;span&gt; </h2>	
@@ -115,12 +104,27 @@ un paragraphe pour délimiter une phrase.
 </p> 
 </section>
 	
- 
+ <!--  new section-->
 	 
-
+<section id="style" >
+<h2> Comment introduire un style pour une page HTML ? : </h2>	
+<ul>
+<li> Directement sur l'élément en ajoutant l'attribut style=" " </li>
+<li> En integrant une balise  &lt; style &gt; dans le head. 
+Dans ce cas-là, les règles s'appliquent uniquement sur le document.
+<div class="divex">
+<p>&lt; head &gt;</p>
+<p>&lt; style &gt;</p>
+<p>...</p>
+<p>&lt;/ style &gt;</p>
+<p>&lt;/ head &gt;</p>
+</div>
+</li>
+<li> En utilisant un fichier externe style.css</li>
+</ul>
+</section>
 	
-<!--  new section-->
-		
+<!--  new section--><!-- --><!-- --><!-- --><!-- -->
 <section id="selecteur" >
 <h2> Les selecteurs : </h2>	
 <p>
@@ -130,7 +134,7 @@ Il y a plusieurs selecteurs en CSS:
 <li> Le selecteur d'élément (element): en utilisant le nom d'élément
  comme h1, h2, p,... etc.</li>
 <li>  Le selecteur de classe (.class): il s'applique à tous les éléments qui possèdent
- la classe.</li>
+ la classe. L'attribur class permet d'édentifier un ensemble d'éléments.</li>
  <li>  Le selecteur d'id (#id): il s'applique à un élément unique en utilisant son id (unique).</li>
  <li>  Le selecteur de voisin direct (élément 1+ élément 2): par exemple, p+div s'applique à tous
  les paragraphes qui sont suivis d'un div. .</li>
@@ -142,25 +146,75 @@ Il y a plusieurs selecteurs en CSS:
 </ul>
 </section>	
 	
-	 
+<!-- *************.........................................************* -->	
+<!-- *************.........................................************* -->	
+<!-- *************.........................................************* -->	 
+<section id="pos" >
+<h2> Gérer la position des éléments d'une page web  </h2>	
+<p> La position peur être spécifiée en utilisant les propriété : left, right, top t bottom. 
+La propriété position spécifie la méthode de positionnement de l'élément,
+ elle peut avoir une des valeurs suivantes : </p>
+<ul>
+<li>Position relative : la position de l'élément est donnée par rapport à sa position normale.</li>
+<li> Position absolute : l'élément est positionné par rapport à l'élément qui le contient.</li>
+<li> Position fixed : l'élément est positionné par rapport à la fenêtre, ce qui signifie qu'il 
+reste toujours à la même place même si la page est défilée.</li>
+
+<li>Position stiky : avec la position sticky, on peut maintenir la position d'un élément 
+à un endroit précis dès que celui-ci devient hors de portée. Entendez par là une réaction au scroll.
+Ce qui sous-entends que cet objet a une position initiale et une position 'en mode sticky'.  </li>
+
+<li>Position static : l'élément conserve sa position normale dans le flux de la page.</li>
+
+</ul>
+
+</section>
+
+<section id="unites" >
+<h2> Les unités  </h2>
+
+
+
+
+</section>
+
+<section id="couleur" >
+<h2> Les couleurs  </h2>
+
+<p> Les couleurs des objets peuvent être spécifiées en plusieurs façons: </p>
+<ul>
+<li> </li>
+<li> </li>
+<li> </li>
+</ul>
+
+</section>
+
+<section id="bordure" >
+<h2> Les bordures  </h2>
+
+
+
+
+</section>
+
+<section id="pseudo" >
+<h2> Les pseudo-classes  </h2>
+
+
+
+
+</section>
+<section id="pseudoelement" >
+<h2> Les pseudo-éléments  </h2>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- --> 
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- -->
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- -->
 
  <aside class=" aside ">
     <div  >
@@ -179,5 +233,18 @@ Il y a plusieurs selecteurs en CSS:
 </footer>
 </div>
 	</div>
+
+	
+<div class="bluebas ">
+<ul class="navig">
+  <li><a href="index.html">HTML</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="CSS.html">CSS</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+</div>
+	
+	
+	
 	
 </body>
