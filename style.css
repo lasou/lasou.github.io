@@ -107,7 +107,7 @@ border-bottom:1px solid black;
 }
 
 
-
+/*
 #eg5{
 	  padding: 5px;
 	text-align: center;
@@ -130,12 +130,12 @@ border-bottom:1px solid black;
 	  padding: 5px;
 	text-align: center;
 }
-
+*/
 
 .exampless{
 	line-height:25px;
 	position:relative;
-	left : 150px;
+	left : 50px;
 	}
 
 
@@ -306,3 +306,21 @@ input:invalid{
 	min-width:80%;
 }
 
+.par1{
+	position:relative;
+	left:50px;
+}
+
+.ligneHaut{
+line-height:4px;
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

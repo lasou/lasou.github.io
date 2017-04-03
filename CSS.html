@@ -36,6 +36,7 @@
 <li><a href="#bordure"> La bordure</a></li> 
 <li><a href="#pseudo"> Les pseudo-classes</a></li> 
 <li><a href="#pseudoelement"> Les pseudo-éléments</a></li> 
+<li><a href="#trans"> La transformation et la transition</a></li> 
 </ul>
 </nav>
 </div>
@@ -107,7 +108,7 @@ un paragraphe pour délimiter une phrase.
  <!--  new section-->
 	 
 <section id="style" >
-<h2> Comment introduire un style pour une page HTML ? : </h2>	
+<h2> Comment introduire un style pour une page HTML ?  </h2>	
 <ul>
 <li> Directement sur l'élément en ajoutant l'attribut style=" " </li>
 <li> En integrant une balise  &lt; style &gt; dans le head. 
@@ -169,15 +170,19 @@ Ce qui sous-entends que cet objet a une position initiale et une position 'en mo
 </ul>
 
 </section>
-
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
 <section id="unites" >
 <h2> Les unités  </h2>
 
 
-
+<ul>
+<li> px : les valeurssont données en pixel.</li>
+<li> % : les valeurs sont données comme poucentage de la taille de la fenêtre.</li>
+<li> em : Les valeurs sont données en fonction de la taille de police.</li>
+</ul>
 
 </section>
-
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
 <section id="couleur" >
 <h2> Les couleurs  </h2>
 
@@ -189,36 +194,63 @@ Ce qui sous-entends que cet objet a une position initiale et une position 'en mo
  </li>
 <li> En donnantt les composantes rouge, vert et bleu en utilisant le système héxadécimal sous la forme :
 #rrggbb, où les composantes rr, gg et bb sont comprises entre 00 et FF (héxadécimal) ce qui correspond à 255 
-en base 10. exemple 111111111 1111111 1111111</li>
+en base 10.
+</li>
 </ul>
 
 </section>
-
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
 <section id="bordure" >
 <h2> Les bordures  </h2>
 
+<p> La bordure peut être ajoutée en utilisant la propriété border:</p> 
+<p class="par1">border: épaisseur style couleur; </p> 
+<p class="par1">border: 1px solide black; </p>
+<p> Nous pouvons aussi spécifier les attributs de border un par un, comme suit: </p> 
+<p class="par1">border-width: 1px; </p>
+<p class="par1">border-style: solide; </p>
+<p class="par1">border-color: black; </p>
 
-
+<p> La bordure peut avoir d'autres attribut comme radius qui permet d'arrondir les angles 
+et les cotés d'un rectangla par exemple.</p>
+<p class="par1">border-radius: 5px; </p>
+<p class="par1">border-radius:75px/12px; </p>
 
 </section>
-
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
 <section id="pseudo" >
 <h2> Les pseudo-classes  </h2>
+<p>
+Comme hover qui permet de modifier un élément quand il est survolé de la souris.</p>
+<div class="par1">
+<p>.Rouge:hover{</p>
+<p>background-color:#00FF00;</p>
+<p>}</p>
+</div>
+
+</section>
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
+<section id="pseudoelement" >
+<h2> Les pseudo-éléments  </h2>
+<p>Comme before qui permet de faire une modification avant l'élément : </p>
+<div class="par1">
+<p>.p::before{</p>
+<p> content:"**";</p>
+<p>}</p>
+</div>
+
+</section>
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
+<section id="trans" >
+<h2> La transformation et la transition  </h2>
 
 
 
 
 </section>
-<section id="pseudoelement" >
-<h2> Les pseudo-éléments  </h2>
-
-
-
-
-
-<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- --> 
-<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- -->
-<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- -->
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- --> <!-- --> <!-- --> 
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- --><!-- --> <!-- --> 
+<!-- --><!-- --><!-- --><!-- --> <!-- --><!-- --> <!-- --><!-- --> <!-- --> 
 
  <aside class="aside">
     <div  >
@@ -242,8 +274,8 @@ en base 10. exemple 111111111 1111111 1111111</li>
 <div class="bluebas">
 <ul class="navig">
   <li><a href="index.html">HTML</a></li>
-  <li><a href="about.html">About</a></li>
   <li><a href="CSS.html">CSS</a></li>
+  <li><a href="about.html">About</a></li>
   <li><a href="Contact.html">Contact</a></li>
 </ul>
 </div>
