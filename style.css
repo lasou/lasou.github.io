@@ -135,7 +135,7 @@ border-bottom:1px solid black;
 .exampless{
 	line-height:25px;
 	position:relative;
-	left : 250px;
+	left : 150px;
 	}
 
 
@@ -223,7 +223,9 @@ input:invalid{
 .couperLargeur{
 	width:60%;
 }
-
+.couperLargeur1{
+	width:50%;
+}
 
 /* */
 .bluebas{
@@ -299,4 +301,8 @@ input:invalid{
 	min-width:80%;
 }
 
+
+#body1{
+	min-width:80%;
+}
 
