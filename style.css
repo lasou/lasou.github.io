@@ -327,5 +327,47 @@ line-height:4px;
  
  
  
+ /**//**//**//**//**/
+ 
+ .box {
+	position: relative;
+	left: 200px;
+	top: 20px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+    border-style:dotted;
+  border-color:#33ff00;
+  border-width:5px;
+  border-radius:52px;
+  background-color: #0000FF;
+  -webkit-transition: width 5s, height 5s, background-color 5s, -webkit-transform 5s, 
+  border-radius 5s, border-style 5s, border-color 5sc, border-width 5s, top 5s;
+  transition: width 5s, height 5s, background-color 5s, transform 5s,
+  border-radius 5s,  border-style 5s, border-color 5s, border-width 5s, top 5s;
+  
+}
+.wave{
+  background:
+    linear-gradient(to right, sandybrown, chocolate);
+  height: 50px;
+  position: relative;
+}
+.box:hover {
+  background-color: #FFCCCC;
+  top: 400px;
+  width: 200px;
+  height: 200px;
+  border-radius:1px;
+  border-style:ridge;
+  border-color:#3322ff;
+  border-width:7px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+ 
+ 
  
  
