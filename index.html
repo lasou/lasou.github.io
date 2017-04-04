@@ -403,14 +403,14 @@ Numéro de téléphone:
 
 
 <div class ="delimite">
-<input type="checkbox" id="cbox1" >
+<input type="checkbox" id="cbox1" />
 <label for="cbox1">
  J'accepte recevoir des mail de la part de Gimini.
  </label>
  </div>
 <div class ="delimite">
 
-<input type="checkbox" id="cbox2" >
+<input type="checkbox" id="cbox2" />
 <label for="cbox2">
 J'accepte recevoir des SMS de la part de Gimini..
  </label>
@@ -421,26 +421,31 @@ J'accepte recevoir des SMS de la part de Gimini..
 <label for="texreq">
 L'établissement d'affiliation* 
 </label>
-<input type="text"  required id="texreq" >
+<input type="text"  required id="texreq" />
+<p> On peut rendre la saisi d'un chapm obligatoire en utilisant le mot required  </p>
 </div>
  
  
 <fieldset>
     <legend>Choisissez le formule souhaité </legend>
 	<div class="delimite">
-    <input type="radio" name="radio" id="radio3">
+    <input type="radio" name="radio" id="radio3"/>
     <label for="radio3">Hôtel seul</label>
 	</div>
 	<div class="delimite">
-	<input type="radio" name="radio" id="radio4">
+	<input type="radio" name="radio" id="radio4"/>
 	<label for="radio4">Hôtel + repas</label>
 	</div>
 	<div class="delimite">
-	<input type="radio" name="radio" id="radio5" value="couleur1">
+	<input type="radio" name="radio" id="radio5" value="couleur1"/>
     <label for="radio5">Hôtel + repas +voiture </label>
 	</div>
+	
 </fieldset>
- 
+  <div class="delimite">
+ <p> Pour permettre un seul choix exclusif, on utilise les radios: </p>
+ <p class="par1"> &lt; input type="radio" name="radio1" &gt;  </p>
+</div>
  
  
  <div class="delimite">
