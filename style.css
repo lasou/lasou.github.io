@@ -347,7 +347,6 @@ line-height:4px;
   border-radius 5s, border-style 5s, border-color 5sc, border-width 5s, top 5s;
   transition: width 5s, height 5s, background-color 5s, transform 5s,
   border-radius 5s,  border-style 5s, border-color 5s, border-width 5s, top 5s;
-  
 }
 .wave{
   background:
@@ -357,15 +356,15 @@ line-height:4px;
 }
 .box:hover {
   background-color: #FFCCCC;
-  top: 400px;
+  top: 200px;
   width: 200px;
   height: 200px;
   border-radius:1px;
   border-style:ridge;
   border-color:#3322ff;
   border-width:7px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
 }
  
  
