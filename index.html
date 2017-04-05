@@ -203,7 +203,7 @@ Un paragraphe est deux balises comme suit;
 	
 	
 	
-<section id = "validateur"
+<section id = "validateur">
 	<h2> Les validateurs du code HTML  </h2>	
 		<ul>
 		<li>  <a href="http://validator.w3.org" target="_blank">  Le w3 </a> </li> 
@@ -364,7 +364,7 @@ Pour insérer une image dans une page web HTML, on utilise une balise &lt; img&g
 
 
 
-<form action="" method="post">
+<form method="post">
 <p> Veuillez compléter ces champs ! </p>
 <div class="delimite">
 <label for="name">
@@ -388,7 +388,7 @@ Lieu de naissance:
 <label for="mel">
 Adresse Email : 
 </label>
-<input type="mail" name="user_mail" id="mel"/>
+<input type="text" name="user_mail" id="mel"/>
 </div>
 <div class="delimite">
 <label for="tel">
@@ -443,14 +443,14 @@ L'établissement d'affiliation*
 	
 </fieldset>
   <div class="delimite">
- <p> Pour permettre un seul choix exclusif, on utilise les radios: </p>
- <p class="par1"> &lt; input type="radio" name="radio1" &gt;  </p>
+   <p> Pour permettre un seul choix exclusif, on utilise les radios: </p>
+   <p class="par1"> &lt; input type="radio" name="radio1" &gt;  </p>
 </div>
  
  
  <div class="delimite">
  <label for="select1"> Choisissez une valeurs</label>
- <select name="select1">
+ <select id="select1">
   <option value = "1" >
  choix 1
  </option>
@@ -465,7 +465,7 @@ L'établissement d'affiliation*
  
   <div class="delimite">
  <label for="select2"> Choisissez une valeurs</label>
- <select name="select2" multiple>
+ <select id="select2" multiple>
  <option value = "1" >
  choix 1
  </option>
@@ -483,7 +483,7 @@ L'établissement d'affiliation*
  
   <div class="delimite">
  <label for="select3"> Choisissez une valeurs</label>
- <select name="select3" >
+ <select id="select3" >
  <optgroup label="grouper1">
  <option value = "1" >
  choix 1
